@@ -108,7 +108,7 @@
     
 ## 삭제 가이드
 
-1. 이전 설치시 metallb.yaml을 설치한 디렉토리로 이동 및 metallb 삭제
+1. metallb 삭제 및 이전 설치시 metallb.yaml을 설치한 디렉토리 정리
 
     * 작업 디렉토리 생성 및 환경 설정
     ```bash
