@@ -58,8 +58,9 @@
 
 ## 설치 가이드
 0. [metallb.yaml 수정](#step0 "step0")
-1. [metallb 설치](#step1 "step1")
-2. [metallb 대역 설정](#step2 "step2")
+1. [metallb namespace 생성](#step1 "step1")
+2. [metallb 설치](#step2 "step2")
+3. [metallb 대역 설정](#step3 "step3")
 
 <h2 id="step0"> Step0. metallb yaml 수정 </h2>
 
@@ -67,24 +68,24 @@
 * 생성 순서 : 
     * 아래의 command를 수정하여 사용하고자 하는 image 버전 정보를 수정한다. (기본 설정 버전은 v0.9.3)
 	```bash
-            sed -i 's/v0.9.3/'${METALLB_VERSION}'/g' metallb.yaml
+        sed -i 's/v0.9.3/'${METALLB_VERSION}'/g' metallb.yaml
 	```
 
 * 비고 :
     * `폐쇄망에서 설치를 진행하여 별도의 image registry를 사용하는 경우 registry 정보를 추가로 설정해준다.`
 	```bash
-            sed -i 's/metallb\/speaker/'${REGISTRY}'\/metallb\/speaker/g' metallb.yaml 
-            sed -i 's/metallb\/controller/'${REGISTRY}'\/metallb\/controller/g' metallb.yaml 
+        sed -i 's/metallb\/speaker/'${REGISTRY}'\/metallb\/speaker/g' metallb.yaml 
+        sed -i 's/metallb\/controller/'${REGISTRY}'\/metallb\/controller/g' metallb.yaml 
 	```
 
-<h2 id="step1"> Step 1. metallb namespace </h2>
+<h2 id="step1"> Step 1. metallb namespace 생성 </h2>
 
 * 목적 : `metallb namespace 생성`
 * 생성 순서: metallb_namespace.yaml 설치  `ex) kubectl apply -f metallb_namespace.yaml`
 * 비고 : 
     * metallb-system 네임스페이스 생성
 
-<h2 id="step2"> Step 2. metallb </h2>
+<h2 id="step2"> Step 2. metallb 설치 </h2>
 
 * 목적 : `metallb 설치`
 * 생성 순서: metallb.yaml 설치  `ex) kubectl apply -f metallb.yaml`
