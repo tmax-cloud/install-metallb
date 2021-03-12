@@ -68,14 +68,14 @@
 * 생성 순서 : 
     * 아래의 command를 수정하여 사용하고자 하는 image 버전 정보를 수정한다. (기본 설정 버전은 v0.9.3)
 	```bash
-        sed -i 's/v0.9.3/'${METALLB_VERSION}'/g' metallb.yaml
+    sed -i 's/v0.9.3/'${METALLB_VERSION}'/g' metallb.yaml
 	```
 
 * 비고 :
     * `폐쇄망에서 설치를 진행하여 별도의 image registry를 사용하는 경우 registry 정보를 추가로 설정해준다.`
 	```bash
-        sed -i 's/metallb\/speaker/'${REGISTRY}'\/metallb\/speaker/g' metallb.yaml 
-        sed -i 's/metallb\/controller/'${REGISTRY}'\/metallb\/controller/g' metallb.yaml 
+    sed -i 's/metallb\/speaker/'${REGISTRY}'\/metallb\/speaker/g' metallb.yaml 
+    sed -i 's/metallb\/controller/'${REGISTRY}'\/metallb\/controller/g' metallb.yaml 
 	```
 
 <h2 id="step1"> Step 1. metallb namespace 생성 </h2>
