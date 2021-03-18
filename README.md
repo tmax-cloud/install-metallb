@@ -35,13 +35,13 @@
 
     * metallb yaml을 공식 홈페이지에서 다운로드가 불가능한 경우 아래의 링크를 이용한다.
     ```bash
-    $ curl https://raw.githubusercontent.com/tmax-cloud/hypercloud-install-guide/master/MetalLB/metallb_namepsace_v0.9.3.yaml > metallb_namespace.yaml
-    $ curl https://raw.githubusercontent.com/tmax-cloud/hypercloud-install-guide/master/MetalLB/metallb_v0.9.3.yaml > metallb.yaml
+    $ curl https://raw.githubusercontent.com/tmax-cloud/install-metallb/5.0/manifest/metallb_namepsace_v0.9.3.yaml > metallb_namespace.yaml
+    $ curl https://raw.githubusercontent.com/tmax-cloud/install-metallb/5.0/manifest/metallb_v0.9.3.yaml > metallb.yaml
     ```
 
     * metallb_cidr yaml을 다운로드한다.
     ```bash
-    $ curl https://raw.githubusercontent.com/tmax-cloud/hypercloud-install-guide/master/MetalLB/metallb_cidr.yaml > metallb_cidr.yaml
+    $ curl https://raw.githubusercontent.com/tmax-cloud/install-metallb/5.0/manifest/metallb_cidr.yaml > metallb_cidr.yaml
     ```
 
 2. 위의 과정에서 생성한 tar 파일들을 폐쇄망 환경으로 이동시킨 뒤 사용하려는 registry에 이미지를 push한다.
