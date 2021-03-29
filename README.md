@@ -35,7 +35,7 @@
 
     * metallb yaml을 공식 홈페이지에서 다운로드가 불가능한 경우 아래의 링크를 이용한다.
     ```bash
-    $ curl https://raw.githubusercontent.com/tmax-cloud/install-metallb/5.0/manifest/metallb_namepsace_v0.9.3.yaml > metallb_namespace.yaml
+    $ curl https://raw.githubusercontent.com/tmax-cloud/install-metallb/5.0/manifest/metallb_namespace_v0.9.3.yaml > metallb_namespace.yaml
     $ curl https://raw.githubusercontent.com/tmax-cloud/install-metallb/5.0/manifest/metallb_v0.9.3.yaml > metallb.yaml
     ```
 
