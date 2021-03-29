@@ -1,6 +1,7 @@
 
 # MetalLB 설치 가이드
     * https://metallb.universe.tf/
+    * Script를 통한 설치를 원할 경우 manifest 디렉토리의 install script 설치 가이드를 참고
 
 ## 구성 요소 및 버전
 * metallb/controller ([metallb/controller:v0.9.3](https://hub.docker.com/layers/metallb/controller/v0.9.3/images/sha256-d1fe971bdb986915cafe339444329d8ef64cb59b11aaf7b22aeb167fdbd67aad?context=explore))
