@@ -49,7 +49,7 @@
             * 폐쇄망에서의 image registry 정보를 설정합니다.
             * ex) registry=172.22.8.106:5000
         * metallb_version={METALLB_VERSION}
-            * ex) metallb_version=v3.16.6
+            * ex) metallb_version=v0.9.3
         * metallb_namespace={METALLB_NAMESPACE}
             * ex) metallb_version=metallb-system
 
