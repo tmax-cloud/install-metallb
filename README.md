@@ -86,16 +86,7 @@
 * 비고 : 
     * metallb-system 네임스페이스 생성
 
-<h2 id="step2"> Step 2. metallb 설치 </h2>
-
-* 목적 : `metallb 설치`
-* 생성 순서: metallb.yaml 설치  `ex) kubectl apply -f metallb.yaml`
-* 비고 : 
-    * metallb-system 네임스페이스 사용
-    * controller-xxxxxxxxxx-xxxxx (1개의 pod)
-    * speaker-xxxxx (모든 노드에 pod)
-
-<h2 id="step3"> Step 3. memberlist secret </h2>
+<h2 id="step2"> Step 2. memberlist secret </h2>
 
 * 목적 : `memberlist secret 생성`
 * 생성 순서: 
@@ -105,6 +96,15 @@
     * metallb-system 네임스페이스 사용
     * secret 1개 생성
     * 최초 설치시에만 실행
+
+<h2 id="step3"> Step 3. metallb 설치 </h2>
+
+* 목적 : `metallb 설치`
+* 생성 순서: metallb.yaml 설치  `ex) kubectl apply -f metallb.yaml`
+* 비고 : 
+    * metallb-system 네임스페이스 사용
+    * controller-xxxxxxxxxx-xxxxx (1개의 pod)
+    * speaker-xxxxx (모든 노드에 pod)
 
 <h2 id="step4"> Step 4. metallb 대역 설정 </h2>
 
